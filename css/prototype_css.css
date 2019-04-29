@@ -290,6 +290,28 @@ a:hover, a:focus {
   width: auto;
 }
 
+#navfixbtn {
+  width: 115px;
+  height: 42px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+#navfixbtn p{
+  padding: auto;
+  margin: auto;
+  width: 65px;
+  height: 22px;
+  font-family: PingFangSC-Semibold, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  color: #0fafff;
+  text-align: center;
+}
+
 
 
 /* ==========================================================================
@@ -299,7 +321,7 @@ header {
   background: url(../img/header-bg.jpg) no-repeat center center;
   width: 100%;
   padding: 0px;
-  height: 100vh;
+  height: 110vh;
   overflow: hidden;
   background-size: cover;
   -webkit-background-size: cover;
@@ -360,7 +382,7 @@ header {
 }
 
 #AboutUs, #OurStory, #JoinUs{
- 
+
 }
 
 #Rent, #OurTeam{
