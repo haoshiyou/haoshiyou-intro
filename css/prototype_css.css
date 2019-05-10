@@ -382,10 +382,25 @@ header {
 }
 
 #AboutUs, #OurStory, #JoinUs{
-
+  height: 694px;
+  position: relative;
+}
+#OurStory{
+  height: 865px;
+  position: relative;
+}
+#JoinUs{
+  height: 670px;
+  position: relative;
 }
 
 #Rent, #OurTeam{
+  height: 851px;
+  background-color: #f2fbfe;
+  position: relative;
+}
+#OurTeam{
+  height: 1210px;
   background-color: #f2fbfe;
   position: relative;
 }
