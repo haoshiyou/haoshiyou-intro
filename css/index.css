@@ -1,0 +1,286 @@
+/* 	==========================================================================
+   	Global styles
+   	========================================================================== */
+	h1, h2, h3, h4, h5, h6, p, .btn, .navbar-nav a, .form-control, .list-inline, small{
+		font-family: PingFangSC;
+	}
+
+	section{
+   		margin: 0px; 
+   		padding: 0% 10.42% 0% 10.42%;
+	}
+
+	h1 {
+		font-family: PingFangSC-Semibold, sans-serif;
+  		font-size: 67px;
+  		font-weight: 600;
+  		font-style: normal;
+  		font-stretch: normal;
+  		line-height: normal;
+  		letter-spacing: 0.9px;
+  		color: #ffffff;
+	}
+/* 	========================================================================== */
+
+/*	------------------Utilities------------------------------------------------ */
+	a {
+  		color: inherit;
+  		font-weight: inherit;
+  		font-size: inherit;
+  		text-decoration: none;
+	}
+
+	a:hover, a:focus {
+  		text-decoration: none;
+  		color: #231f20;
+  		-webkit-transition: all 0.35s ease-in-out;
+  		-moz-transition: all 0.35s ease-in-out;
+  		-o-transition: all 0.35s ease-in-out;
+  		transition: all 0.35s ease-in-out;
+	}
+
+	.fa-lg {
+  		font-size: 1.33333em;
+  		line-height: 0.75em;
+  		vertical-align: -10%;
+	}
+
+	::selection {
+		background: #231f20; /* Safari */
+		color: #FFFFFF;
+	}
+
+	::-moz-selection {
+		background: #231f20; /* Firefox */
+		color: #FFFFFF;
+	}
+	.row{
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+/*	--------------------------------------------------------------------------- */
+
+/* ==========================================================================
+   Nav Styles
+   ========================================================================== */
+   .navbar {
+    	border: 0px solid rgba(0, 0, 0, 0);
+    	background: #70cbce;
+    	margin: auto;
+    	min-height: 40px;
+    	padding-top: 2px;
+    	position: fixed;
+    	top: -69px;
+    	transition: top 0.4s ease 0s;
+	}
+
+	.navbar.open {
+    	top: 0;
+	}
+
+	.navbar-inverse .navbar-nav > li > a, .navbar-nav a {
+    	color: #ffffff;
+    	font-size: 14px;
+    	letter-spacing: 1px;
+	}
+
+	.navbar-inverse .navbar-nav > li > a:hover {
+    	color: #ffffff;
+    	opacity: 0.6;
+	}
+
+	.nav > li > a {
+    	position: relative;
+    	display: block;
+    	padding: 10px 10px;
+	}
+
+	.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    	border-color: #4ec3cd;
+	}
+
+	.navbar-inverse .navbar-toggle {
+    	border-color: transparent;
+	}
+
+	.logo img {
+		margin-top: 0;
+	}
+
+	.navbar .scroll-nav{
+  		position: relative;
+  		top:20px;
+	}
+
+	.navbar .scroll-nav>li>a:hover{
+  		color: #ffffff;
+  		opacity: 0.6;
+	}
+
+	.navbar-right{
+  		width: auto;
+	}
+
+	#navfixbtn {
+  		width: 115px;
+  		height: 42px;
+  		border-radius: 4px;
+  		background-color: #ffffff;
+	}
+
+	#navfixbtn p{
+  		padding: auto;
+  		margin: auto;
+  		width: 65px;
+  		height: 22px;
+  		font-family: PingFangSC-Semibold, sans-serif;
+  		font-size: 16px;
+  		font-weight: 600;
+  		font-style: normal;
+  		font-stretch: normal;
+  		line-height: normal;
+  		letter-spacing: 0.2px;
+  		color: #0fafff;
+  		text-align: center;
+	}
+
+	.scroll-nav ul{
+  		list-style-type:none;
+  		margin: 0;
+  		padding: 0;
+	}	
+
+	.scroll-nav li{
+  		display: inline-block;
+  		padding: 0.9375%;
+	}
+
+	.scroll-nav a{
+  		display: block;
+  		width: 92px;
+  		height: 25px;
+  		font-family: "PingFangSC" sans-serif;
+  		font-size: 18px;
+  		font-weight: normal;
+  		font-style: normal;
+  		font-stretch: normal;
+  		line-height: normal;
+  		letter-spacing: 0.2px;
+  		color: #ffffff;
+	}
+
+	#navbtn {
+  		width: 115px;
+  		height: 42px;
+  		border-radius: 4px;
+  		background-color: #ffffff;
+	}
+
+	#navbtn p{
+  		padding: auto;
+  		margin: auto;
+  		width: 65px;
+  		height: 22px;
+  		font-family: PingFangSC-Semibold, sans-serif;
+  		font-size: 16px;
+  		font-weight: 600;
+  		font-style: normal;
+  		font-stretch: normal;
+  		line-height: normal;
+  		letter-spacing: 0.2px;
+  		color: #0fafff;
+  		text-align: center;
+	}
+/* ========================================================================== */
+
+/* 	==========================================================================
+   	Main styles
+   	========================================================================== */
+	header{
+  		background: url(../img/header-bg.jpg) no-repeat center center;
+  		width: 100%;
+  		padding: 0px;
+  		height: 694px;
+  		overflow: hidden;
+  		background-size: cover;
+  		-webkit-background-size: cover;
+  		-moz-background-size: cover;
+  		-o-background-size: cover;
+	}
+
+	.header-info {
+  		position: relative;
+  		top:300px;
+  		width: 100%;
+  		display: flex;
+  		flex-direction: column;
+  		justify-content: center;
+  		align-items: center;
+  		text-align: center;
+	}
+
+/* ========================================================================== */
+
+
+/* ==========================================================================
+   Mobile styles
+   ========================================================================== */
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+	.btn-lg {
+  		font-size: 12.5px;
+  		line-height: 1.33;
+  		padding: 16px 13px;
+  		letter-spacing: 0px;
+	}
+
+
+	.btn-wide {
+  		width: 100%;
+  		font-size: 12.5px;
+  		line-height: 1.33;
+  		padding: 16px 13px;
+  		letter-spacing: 0px;	
+	}
+
+	#be-the-first {
+      background-attachment: scroll;
+  	}
+
+}
+
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 481px) and (max-width: 767px) {
+
+	#be-the-first {
+      	background-attachment: scroll;
+  	}
+
+}
+
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 991px) {
+
+	#be-the-first {
+      	background-attachment: scroll;
+  	}
+
+}
+
+
+
+/* Desktops and laptops ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+
+
+/* Large screens ----------- */
+@media (min-width: 1200px) and (max-width: 3000px) {
+
+}
