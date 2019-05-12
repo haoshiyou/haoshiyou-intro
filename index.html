@@ -29,7 +29,7 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="navbar-collapse collapse">
           <div class="row" style="margin: 0px; padding: 0% 10.42% 0% 10.42%;">
-          <div class="col-lg-3 navbar-header">
+          <div class="col-lg-2 navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -37,17 +37,17 @@
             </button>
             <a class="logo" href="prototype.html"><img src="img/Haoshiyou_Logo.svg" alt="Logo"></a>
           </div>
-          <div class="scroll-nav col-lg-7" style="position: relative; top:20px;">
+          <div class="fixed-nav col-lg-8">
             <ul>
               <li><a href="#AboutUs" class="scroll">关于好室友</a></li>
               <li><a href="#Rent" class="scroll">招租&求租</a></li>
               <li><a href="#OurStory" class="scroll">我们的故事</a></li>
               <li><a href="#OurTeam" class="scroll">我们的团队</a></li>
               <li><a href="#JoinUs" class="scroll">加入我们</a></li>
-              <!--li><a href="#ContactUs" class="scroll">联系我们</a></li-->
+              <li><a href="#ContactUs" class="scroll">联系我们</a></li>
             </ul>
           </div>
-          <div class="col-lg-2 nav navbar-nav navbar-right" style="position: relative; top:10px;">
+          <div class="col-lg-2 nav navbar-nav navbar-right">
             <button id="navfixbtn" type="button" class="btn"><p>立即加入</p></button>
           </div>
         </div><!--/.navbar-collapse -->
@@ -56,30 +56,29 @@
 
     <header>
       <div class="nav">
-        <div class="row" style="margin: 0px; padding: 0% 10.42% 0% 10.42%;">
-          <div class="col-lg-3" style="position: relative; top:20px;">
+        <div class="row topNav">
+          <div class="col-lg-2 topNav_logo">
             <a href="prototype.html"><img src="img/Haoshiyou_Logo.svg" alt="Logo"></a>
           </div>
-          <div class="scroll-nav col-lg-7" style="position: relative; top:37px;">
+          <div class="scroll-nav col-lg-8">
             <ul>
-              <li style="padding: 0.9375%;"><a href="#AboutUs" class="scroll">关于好室友</a></li>
+              <li><a href="#AboutUs" class="scroll">关于好室友</a></li>
               <li><a href="#Rent" class="scroll">招租&求租</a></li>
               <li><a href="#OurStory" class="scroll">我们的故事</a></li>
               <li><a href="#OurTeam" class="scroll">我们的团队</a></li>
               <li><a href="#JoinUs" class="scroll">加入我们</a></li>
-              <!--li><a href="#ContactUs" class="scroll">联系我们</a></li-->
+              <li><a href="#ContactUs" class="scroll">联系我们</a></li>
             </ul>
           </div>
-          <div class="col-lg-2 signin text-right navbar-nav" style="position: relative; top:30px;">
-            <button id="navbtn" type="button" class="btn"><p>立即加入</p></button>
+          <div class="col-lg-2 signin text-right navbar-nav">
+            <button type="button" class="btn"><p>立即加入</p></button>
           </div>
         </div>
-
-        <div class="row header-info">
-          <div class="col-lg-12 col-sm-offset-1 text-center">
-            <h1 class="wow fadeIn slogan">为你在湾区找一个温馨的家</h1>
-            <br>
-          </div>
+      </div>
+      <div class="row header-info">
+        <div class="col-lg-6 col-lg-offset-3 text-center">
+          <h1 class="wow fadeIn slogan">为你在湾区找一个温馨的家</h1>
+          <br>
         </div>
       </div>
     </header>
@@ -136,9 +135,9 @@
             </div>
             <br>
             <div style="text-align:center">
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-              <span class="dot"></span> 
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
             </div>
         </div>
         <div class="col-lg-6">
@@ -322,14 +321,14 @@
         var slides = document.getElementsByClassName("mySlides");
         var dots = document.getElementsByClassName("dot");
         for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
+          slides[i].style.display = "none";
         }
         slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}    
+        if (slideIndex > slides.length) {slideIndex = 1}
         for (i = 0; i < dots.length; i++) {
           dots[i].className = dots[i].className.replace(" active", "");
         }
-        slides[slideIndex-1].style.display = "block";  
+        slides[slideIndex-1].style.display = "block";
         dots[slideIndex-1].className += " active";
         setTimeout(showSlides, 6000); // Change image every 2 seconds
       }
