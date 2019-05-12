@@ -423,7 +423,7 @@
 	.rent-right .row{
 			position: absolute;
 			top: 665px;
-			left:20%;	
+			left:20%;
 	}
 
 	.rentbtn{
@@ -448,9 +448,72 @@
 /*-------------------------#Rent end here-------------------------------*/
 
 /*-------------------------#OurStory start here-----------------------------*/
-/*-------------------------#OurStory end here-------------------------------*/
+	#OurStory {
+			height: 865px;
+			margin: 0px;
+			padding: 0% 10.42% 0% 10.42%;
+			background-color: #ffffff;
+	}
 
+	#TeamPic {
+	  	position: absolute;
+	  	left:43.8%;
+	}
+
+	#TeamPic img{
+			position: relative;
+			top:311px;
+	}
+
+	.container {
+			padding-left: 4.5%;
+			padding-right: 4.5%;
+	}
+
+	.story	{
+			position: absolute;
+			margin: 106px 0px 171px 0px;
+			width: 557px;
+  		height: 588px;
+  		border-radius: 18px;
+  		box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.08);
+  		background-color: #ffffff;
+	}
+
+	.story h2 {
+			height: 53px;
+			font-family: PingFangSC-Semibold,sans-serif;
+			font-size: 38px;
+			font-weight: 600;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: normal;
+			letter-spacing: 0.5px;
+			color: #12272e;
+			padding: 47px 0px 20px 0px;
+	}
+
+	.story p {
+			width: 425px;
+  		height: 418px;
+  		font-family: PingFangSC-Medium, sans-serif;
+  		font-size: 22px;
+  		font-weight: 500;
+  		font-style: normal;
+  		font-stretch: normal;
+  		line-height: 1.59;
+  		letter-spacing: 0.3px;
+  		color: #415258;
+			padding-top: 30px;
+	}
+/*-------------------------#OurStory end here-------------------------------*/
 /*-------------------------#OurTeam start here-----------------------------*/
+	#OurTeam {
+  	height: 1210px;
+  	background-color: rgba(242, 251, 254, 1);
+		padding: 0% 10.42% 0% 10.42%;
+		margin: 0;
+	}
 /*-------------------------#OurTeam end here-------------------------------*/
 
 /*-------------------------#JoinUs start here-----------------------------*/
