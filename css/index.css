@@ -509,17 +509,206 @@
 /*-------------------------#OurStory end here-------------------------------*/
 /*-------------------------#OurTeam start here-----------------------------*/
 	#OurTeam {
-  	height: 1210px;
-  	background-color: rgba(242, 251, 254, 1);
-		padding: 0% 10.42% 0% 10.42%;
-		margin: 0;
+  		height: 1210px;
+  		background-color: rgba(242, 251, 254, 1);
+			padding: 0% 10.42% 0% 10.42%;
+			margin: 0;
+	}
+
+	.teamTitle {
+			padding-top: 71px;
+	}
+
+	#OurTeam h1{
+	  	width: 193px;
+	  	height: 53px;
+	  	font-family: PingFangSC-Medium, sans-serif;
+	  	font-size: 38px;
+	  	font-weight: 500;
+	  	font-style: normal;
+	  	font-stretch: normal;
+	  	line-height: normal;
+	  	letter-spacing: 0.5px;
+	  	color: #12272e;
+	  	margin-bottom: 30px;
+	}
+
+	.members {
+			padding: 0px;
+	}
+
+	.member {
+		 	margin-bottom: 70px;
+	}
+
+	#OurTeam img{
+			height: 170px;
+			width: auto;
+	  	margin: auto;
+	  	display: block;
+	}
+
+	#OurTeam p._name{
+			height: 33px;
+	  	font-size: 24px;
+	  	text-align: center;
+	  	font-family: PingFangSC-Semibold, sans-serif;
+	  	font-weight: 500;
+	  	font-style: normal;
+	  	font-stretch: normal;
+	  	line-height: normal;
+	  	letter-spacing: 0.3px;
+	  	color: #262a3e;
+	}
+
+	#OurTeam p._title{
+			height: 30px;
+	  	font-size: 22px;
+	  	text-align: center;
+	  	font-weight: normal;
+	  	font-style: normal;
+	  	font-stretch: normal;
+	  	line-height: normal;
+	  	letter-spacing: 0.3px;
+	  	color: #262a3e;
 	}
 /*-------------------------#OurTeam end here-------------------------------*/
 
 /*-------------------------#JoinUs start here-----------------------------*/
+	#JoinUs {
+			height: 670px;
+			margin: 0px;
+			padding: 0% 10.42% 0% 10.42%;
+			background-color: #ffffff;
+	}
+
+	.join-left h2{
+			height: 53px;
+			font-family: PingFangSC-Semibold,sans-serif;
+			font-size: 38px;
+			font-weight: 600;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: normal;
+			letter-spacing: 0.5px;
+			color: #12272e;
+			margin-top: 65px;
+			margin-bottom: 20px;
+	}
+
+	.join-left .subtitle{
+			height: 90px;
+			font-family: PingFangSC-Medium, sans-serif;
+			font-size: 22px;
+			font-weight: 500;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: normal;
+			letter-spacing: 0.3px;
+			color: #415258;
+			margin-bottom: 56px;
+	}
+
+	.join-left h3{
+  		height: 40px;
+  		font-family: PingFangSC-Medium, sans-serif;
+  		font-size: 28px;
+  		font-weight: 500;
+  		font-style: normal;
+  		font-stretch: normal;
+  		line-height: normal;
+  		letter-spacing: normal;
+  		color: #12272e;
+			margin-bottom: 15px;
+	}
+
+	.join-left .opening-positions{
+  		height: 120px;
+  		font-size: 22px;
+  		font-weight: normal;
+  		font-style: normal;
+  		font-stretch: normal;
+  		line-height: normal;
+  		letter-spacing: 0.3px;
+  		color: #12272e;
+	}
+
+	.join-left button{
+			width: 141px;
+  		height: 56px;
+  		border-radius: 4px;
+  		background-color: #0fafff;
+  		font-family: PingFangSC-Semibold,sans-serif;
+  		font-size: 16px;
+  		font-weight: 600;
+  		font-style: normal;
+  		font-stretch: normal;
+  		line-height: normal;
+  		letter-spacing: 0.2px;
+  		color: #ffffff;
+	}
+
+	.join-right{
+			margin-top: 137px;
+	}
+
+	.points{
+			margin-bottom: 67px;
+	}
+
+	.check_mark{
+			width: 64px;
+			height: 64px;
+			object-fit: contain;
+	}
+
+	.join-right p{
+			height: 60px;
+			font-size: 22px;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: normal;
+			letter-spacing: 0.3px;
+			color: #12272e;
+	}
+
+
 /*-------------------------#JoinUs end here-------------------------------*/
 
 /*-------------------------Footer start here-----------------------------*/
+footer {
+  background: #0fafff;;
+  padding: 10px 0px;
+  height: auto;
+}
+
+.social{
+  font-family: "PingFangSC" sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+.social li a:hover {
+  opacity: 0.5;
+}
+
+footer p{
+  width: 295px;
+  height: 44px;
+  font-family: "PingFangSC" sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
 /*-------------------------Footer end here-------------------------------*/
 
 /* ========================================================================== */
