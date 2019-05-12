@@ -321,6 +321,130 @@
 /*-------------------------#AboutUs end here-------------------------------*/
 
 /*-------------------------#Rent start here-----------------------------*/
+	#Rent{
+			height: 851px;
+			margin: 0px;
+			padding: 0% 10.42% 0% 10.42%;
+			background-color: #f2fbfe;
+	}
+
+	.rent-left h2{
+			height: 53px;
+			font-family: PingFangSC-Semibold, sans-serif;
+			font-size: 38px;
+			font-weight: 600;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: normal;
+			letter-spacing: 0.5px;
+			color: #12272e;
+			margin: 63px 0px 20px 0px;
+	}
+
+	.rent-left p{
+			width: 465px;
+			height: 60px;
+			font-family: PingFangSC-Medium,sans-serif;
+			font-size: 22px;
+			font-weight: 500;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: normal;
+			letter-spacing: 0.3px;
+			color: #415258;
+	}
+
+	.mySlides {
+			display: none;
+	}
+
+	img {
+			vertical-align: middle;
+	}
+
+	/* Slideshow container */
+	.slideshow-container {
+	  	max-width: 1000px;
+	  	position: relative;
+	  	margin: auto;
+	}
+
+	.dot {
+	  	height: 15px;
+	  	width: 15px;
+	  	margin: 0 2px;
+	  	background-color: #bbb;
+	  	border-radius: 50%;
+	  	display: inline-block;
+	  	transition: background-color 1s ease;
+	}
+
+	.active {
+	  	background-color: #717171;
+	}
+
+	/* Fading animation */
+	.fade {
+	  	-webkit-animation-name: fade;
+	  	-webkit-animation-duration: 2s;
+	  	animation-name: fade;
+	  	animation-duration: 7s;
+	}
+
+	@-webkit-keyframes fade {
+	  	from {opacity: 0.1}
+	  	to {opacity: 1}
+	}
+
+	@keyframes fade {
+	  	from {opacity: 0.1}
+	  	to {opacity: 1}
+	}
+
+	#iphonechat{
+	  	position: absolute;
+			top: 172px;
+	  	left: 25%;
+	  	right: 25%;
+	}
+
+	.chatlogs{
+			width: 85%;
+			position: absolute;
+			top: 230px;
+	}
+
+	.chat{
+			display: flex;
+			flex-flow: row wrap;
+			align-items: flex-start;
+	}
+
+	.rent-right .row{
+			position: absolute;
+			top: 665px;
+			left:20%;	
+	}
+
+	.rentbtn{
+			width: 141px;
+  		height: 56px;
+  		border-radius: 4px;
+  		background-color: #0fafff;
+	}
+
+	.rentbtn p{
+  		height: 22px;
+  		font-family: PingFangSC-Semibold,sans-serif;
+  		font-size: 16px;
+  		font-weight: 600;
+  		font-style: normal;
+  		font-stretch: normal;
+  		line-height: normal;
+  		letter-spacing: 0.2px;
+  		color: #ffffff;
+	}
+
 /*-------------------------#Rent end here-------------------------------*/
 
 /*-------------------------#OurStory start here-----------------------------*/

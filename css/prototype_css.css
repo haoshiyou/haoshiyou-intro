@@ -397,7 +397,6 @@ header {
 #Rent, #OurTeam{
   height: 851px;
   background-color: #f2fbfe;
-  position: relative;
 }
 #OurTeam{
   height: 1210px;
@@ -443,7 +442,7 @@ img {vertical-align: middle;}
   margin: auto;
 }
 
-/* Caption text 
+/* Caption text
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -478,12 +477,12 @@ img {vertical-align: middle;}
 }
 
 @-webkit-keyframes fade {
-  from {opacity: 0.1} 
+  from {opacity: 0.1}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: 0.1} 
+  from {opacity: 0.1}
   to {opacity: 1}
 }
 
@@ -587,7 +586,7 @@ img {vertical-align: middle;}
 }
 
 #OurTeam img{
-  margin: auto;    
+  margin: auto;
   display: block;
 }
 
