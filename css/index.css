@@ -105,13 +105,23 @@
     	border-color: transparent;
 	}
 
+	.fixedNav{
+		margin: 0px;
+		padding: 0% 10.42% 0% 10.42%;
+	}
+
+	.fixedNav_logo{
+		padding: 0;
+	}
+
 	.logo img {
 		margin-top: 0;
 	}
 
 	.navbar .fixed-nav{
   		position: relative;
-  		top:20px;
+  		top:25px;
+			padding: 0;
 	}
 
 	.fixed-nav ul{
@@ -121,21 +131,20 @@
 	}
 
 	.fixed-nav li{
-	  display: inline-block;
-	  padding: 0.9375%;
+		display: inline-block;
+	  padding: 0% 2.53% 0% 2.53%;
 	}
 
 	.fixed-nav a{
 	  	display: block;
-	  	width: 92px;
 	  	height: 25px;
-	  	font-family: "PingFangSC" sans-serif;
+	  	font-family: PingFangSC sans-serif;
 	  	font-size: 18px;
 	  	font-weight: normal;
 	  	font-style: normal;
 	  	font-stretch: normal;
 	  	line-height: normal;
-	  	letter-spacing: 0.2px;
+	  	letter-spacing: 0.25px;
 	  	color: #ffffff;
 	}
 
@@ -148,56 +157,19 @@
   		width: auto;
 	}
 
-	#navfixbtn {
-  		width: 115px;
-  		height: 42px;
-  		border-radius: 4px;
-  		background-color: #ffffff;
+	.fixed_sigin{
+			position: relative;
+			top: 12.5px;
+			padding: 0;
 	}
 
-	#navfixbtn p{
-  		padding: auto;
-  		margin: auto;
-  		width: 65px;
-  		height: 22px;
-  		font-family: PingFangSC-Semibold, sans-serif;
-  		font-size: 16px;
-  		font-weight: 600;
-  		font-style: normal;
-  		font-stretch: normal;
-  		line-height: normal;
-  		letter-spacing: 0.2px;
-  		color: #0fafff;
-  		text-align: center;
-	}
 
-	#navbtn {
-  		width: 115px;
-  		height: 42px;
-  		border-radius: 4px;
-  		background-color: #ffffff;
-	}
-
-	#navbtn p{
-  		padding: auto;
-  		margin: auto;
-  		width: 65px;
-  		height: 22px;
-  		font-family: PingFangSC-Semibold, sans-serif;
-  		font-size: 16px;
-  		font-weight: 600;
-  		font-style: normal;
-  		font-stretch: normal;
-  		line-height: normal;
-  		letter-spacing: 0.2px;
-  		color: #0fafff;
-  		text-align: center;
-	}
 /* ========================================================================== */
 
 /* 	==========================================================================
    	Main styles
    	========================================================================== */
+	/*-------------------------header start here---------------------------------*/
 	header{
   		background: url(../img/header-bg.jpg) no-repeat center center;
   		width: 100%;
@@ -225,10 +197,11 @@
 
 	.scroll-nav{
 			position: relative;
-			top: 60px;
+			top: 65px;
+			padding: 0;
 	}
 
-	.fixed-nav, .scroll-nav ul{
+	.scroll-nav ul{
 	  list-style-type:none;
 	  margin: 0;
 	  padding: 0;
@@ -236,7 +209,7 @@
 
 	.scroll-nav li{
 	  display: inline-block;
-	  padding: 0% 1.9% 0% 1.9%;
+	  padding: 0% 2.53% 0% 2.53%;
 	}
 
 	.scroll-nav a{
@@ -255,17 +228,19 @@
 	.signin{
 			position: relative;
 			top: 50px;
+			padding: 0;
 	}
 
-	.signin button{
-			height: 42px;
-			border-radius: 4px;
-			background-color: #ffffff;
+	.topNav_btn {
+		width: 115px;
+		height: 42px;
+		border-radius: 4px;
+		background-color: #ffffff;
 	}
 
-	.signin p{
+	.topNav_btn p{
 			height: 22px;
-  		font-family: PingFangSC-Semibold;
+  		font-family: PingFangSC-Semibold, sans-serif;
   		font-size: 16px;
   		font-weight: 600;
   		font-style: normal;
@@ -280,7 +255,25 @@
   		top:300px;
   		width: 100%;
 	}
+/*-------------------------header end here---------------------------------*/
 
+/*-------------------------#AboutUs start here-----------------------------*/
+/*-------------------------#AboutUs end here-------------------------------*/
+
+/*-------------------------#Rent start here-----------------------------*/
+/*-------------------------#Rent end here-------------------------------*/
+
+/*-------------------------#OurStory start here-----------------------------*/
+/*-------------------------#OurStory end here-------------------------------*/
+
+/*-------------------------#OurTeam start here-----------------------------*/
+/*-------------------------#OurTeam end here-------------------------------*/
+
+/*-------------------------#JoinUs start here-----------------------------*/
+/*-------------------------#JoinUs end here-------------------------------*/
+
+/*-------------------------Footer start here-----------------------------*/
+/*-------------------------Footer end here-------------------------------*/
 
 /* ========================================================================== */
 
