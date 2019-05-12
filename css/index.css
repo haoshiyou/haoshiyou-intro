@@ -139,7 +139,6 @@
 	.fixed-nav a{
 	  	display: block;
 	  	height: 25px;
-	  	font-family: PingFangSC sans-serif;
 	  	font-size: 18px;
 	  	font-weight: normal;
 	  	font-style: normal;
@@ -546,6 +545,7 @@
 			width: auto;
 	  	margin: auto;
 	  	display: block;
+			margin-bottom: 37px;
 	}
 
 	#OurTeam p._name{
@@ -631,6 +631,7 @@
   		line-height: normal;
   		letter-spacing: 0.3px;
   		color: #12272e;
+			margin-bottom: 25px;
 	}
 
 	.join-left button{
@@ -677,38 +678,39 @@
 /*-------------------------#JoinUs end here-------------------------------*/
 
 /*-------------------------Footer start here-----------------------------*/
-footer {
-  background: #0fafff;;
-  padding: 10px 0px;
-  height: auto;
-}
+	footer {
+  		background: #0fafff;;
+  		padding: 10px 0px;
+  		height: auto;
+		}
 
-.social{
-  font-family: "PingFangSC" sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 0.2px;
-  color: #ffffff;
-}
-.social li a:hover {
-  opacity: 0.5;
-}
+	.social{
+  		font-family: "PingFangSC" sans-serif;
+  		font-size: 16px;
+  		font-weight: 600;
+  		font-style: normal;
+  		font-stretch: normal;
+  		line-height: normal;
+  		letter-spacing: 0.2px;
+  		color: #ffffff;
+	}
 
-footer p{
-  width: 295px;
-  height: 44px;
-  font-family: "PingFangSC" sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 0.2px;
-  color: #ffffff;
-}
+	.social li a:hover {
+  		opacity: 0.5;
+	}
+
+	footer p{
+  		width: 295px;
+  		height: 44px;
+  		font-family: "PingFangSC" sans-serif;
+  		font-size: 16px;
+  		font-weight: 600;
+  		font-style: normal;
+  		font-stretch: normal;
+  		line-height: normal;
+  		letter-spacing: 0.2px;
+  		color: #ffffff;
+	}
 /*-------------------------Footer end here-------------------------------*/
 
 /* ========================================================================== */
