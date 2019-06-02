@@ -1,25 +1,13 @@
 /* 	==========================================================================
    	Global styles
    	========================================================================== */
+	body{
+			height:100%;
+			width: 100%;
+	}
 	h1, h2, h3, h4, h5, h6, p, a, .btn, .navbar-nav a, .form-control, .list-inline, small{
 			font-family: "Noto Sans SC", sans-serif;
 			margin:0;
-	}
-
-	section{
-   		margin: 0px;
-   		padding: 0% 10.42% 0% 10.42%;
-	}
-
-	h1 {
-			font-family: "Noto Sans SC", sans-serif;
-  		font-size: 67px;
-  		font-weight: 600;
-  		font-style: normal;
-  		font-stretch: normal;
-  		line-height: normal;
-  		letter-spacing: 0.9px;
-  		color: #ffffff;
 	}
 /* 	========================================================================== */
 
@@ -61,6 +49,14 @@
 			margin-left: 0;
 	}
 
+	.container{
+			margin: 0;
+	}
+
+	.img-responsive{
+		max-width: 100%;
+		height: auto;
+	}
 /*	--------------------------------------------------------------------------- */
 
 /* ==========================================================================
@@ -83,8 +79,8 @@
 
 	.navbar-inverse .navbar-nav > li > a, .navbar-nav a {
     	color: #ffffff;
-    	font-size: 14px;
-    	letter-spacing: 1px;
+    	font-size: 10px;
+    	letter-spacing: 0.3px;
 	}
 
 	.navbar-inverse .navbar-nav > li > a:hover {
@@ -120,31 +116,29 @@
 	}
 
 	.navbar .fixed-nav{
-  		position: relative;
-  		top:25px;
+			margin-top:2.25%;
 			padding: 0;
 	}
 
 	.fixed-nav ul{
 	  	list-style-type:none;
-	  	padding: auto;
+			padding-inline-start:10%;
 	}
 
 	.fixed-nav li{
 			display: inline-block;
-	  	padding: 0% 3.5% 0% 3.5%;
+	  	margin: 0 1.302vw 0 1.302vw;
 	}
 
 	.fixed-nav a{
 			font-family: "Noto Sans SC", sans-serif;
 	  	display: block;
-	  	height: 25px;
-	  	font-size: 1.3em;
+	  	font-size: 10px;
 	  	font-weight: normal;
 	  	font-style: normal;
 	  	font-stretch: normal;
 	  	line-height: normal;
-	  	letter-spacing: 0.25px;
+	  	letter-spacing: 0.3px;
 	  	color: #ffffff;
 	}
 
@@ -171,15 +165,9 @@
    	========================================================================== */
 	/*-------------------------header start here---------------------------------*/
 	header{
-  		background: url(../img/header-bg.jpg) no-repeat center center;
   		width: 100%;
   		padding: 0px;
-  		height: 694px;
-  		overflow: hidden;
-  		background-size: cover;
-  		-webkit-background-size: cover;
-  		-moz-background-size: cover;
-  		-o-background-size: cover;
+			height: auto;
 	}
 
 	.topNav{
@@ -189,90 +177,102 @@
 	}
 
 	.topNav_logo{
-			position: relative;
-			top:39px;
 			padding-left: 0;
 			padding-right: 0;
 	}
 
 	.scroll-nav{
-			position: relative;
-			top: 65px;
+			margin-top:2%;
 			padding: 0;
 	}
 
 	.scroll-nav ul{
 	  	list-style-type:none;
-	  	padding: auto;
+	  	padding-inline-start:10%;
 	}
 
 	.scroll-nav li{
 	  	display: inline-block;
-	  	margin: 0% 3.5% 0% 3.5%;
+	  	margin: 0 1.302vw 0 1.302vw;
 	}
 
 	.scroll-nav a{
 	  	display: block;
-	  	height: 25px;
-	  	font-size: 1.3em;
+	  	font-size: 10px;
 	  	font-weight: 500;
 	  	font-style: normal;
 	  	font-stretch: normal;
 	  	line-height: normal;
-	  	letter-spacing: 0.25px;
+	  	letter-spacing: 0.3px;
 	  	color: #ffffff;
 	}
 
 	.signin{
-			position: relative;
-			top: 50px;
+			margin-top: 2%;
 			padding: 0;
 	}
 
 	.topNav_btn {
-			width: 115px;
-			height: 42px;
+			width:61.3px;
+			height:22.4px;
 			border-radius: 4px;
 			background-color: #ffffff;
 	}
 
 	.topNav_btn p{
-			height: 22px;
   		font-family: "Noto Sans SC", sans-serif;
-  		font-size: 16px;
+  		font-size: 8.5px;
   		font-weight: 500;
   		font-style: normal;
   		font-stretch: normal;
-  		line-height: normal;
   		letter-spacing: 0.2px;
   		color: #0fafff;
 	}
 
 	.header-info {
-  		position: absolute;
-  		top:300px;
   		width: 100%;
+	}
+
+	#section1{
+			min-height: 370px;
+			height:70vh;
+			width: 100%;
+			background: url(../img/header-bg.jpg) no-repeat center center;
+  		background-size: cover;
+  		-webkit-background-size: cover;
+  		-moz-background-size: cover;
+  		-o-background-size: cover;
+	}
+
+	.slogan{
+			font-size: 4.688vw;
+			color: #ffffff;
+			font-weight: 600;
+  		font-style: normal;
+  		font-stretch: normal;
+  		line-height: normal;
+  		letter-spacing: 0.5px;
 	}
 /*-------------------------header end here---------------------------------*/
 
 /*-------------------------#AboutUs start here-----------------------------*/
 	#AboutUs {
-			height: 694px;
 			margin: 0px;
 			padding: 0% 10.42% 0% 10.42%;
 			background-color: #ffffff;
 	}
 
 	.aboutUS-title{
-			padding: 66px 0px 91px 0px;
+			margin: 5% 0 7.5% 0;
 	}
 
 	.aboutUS-title h1{
-			width: 653px;
-	  	height: 80px;
-	  	position: relative;
+			width: 70%;
+			margin-left: auto;
+			margin-right: auto;
+			height: auto;
 	  	font-family: "Noto Sans SC", sans-serif;
-	  	font-size: 28px;
+	  	font-size: 2.083vw;
 	  	font-weight: 500;
 	  	font-style: normal;
 	  	font-stretch: normal;
@@ -290,9 +290,8 @@
 	}
 
 	.aboutUS-sutitle h3{
-			height: 30px;
 			font-family: "Noto Sans SC", sans-serif;
-			font-size: 22px;
+			font-size: 1.693vw;
 			font-weight: 600;
 			font-style: normal;
 			font-stretch: normal;
@@ -300,12 +299,12 @@
 			letter-spacing: 0.3px;
 			color: #12272e;
 			text-align: center;
-			margin: 12px 0px 12px 0px;
+			margin: 2% 0 2% 0;
 	}
 
 	.aboutUS-sutitle p{
 			font-family: "Noto Sans SC",sans-serif;
-			font-size: 16px;
+			font-size: 1.302vw;
 			font-weight: 500;
 			font-style: normal;
 			font-stretch: normal;
@@ -313,37 +312,33 @@
 			letter-spacing: 0.2px;
 			text-align: center;
 			color: #415258;
-			padding: 0% 8.5% 0% 8.5%;
 	}
 
 /*-------------------------#AboutUs end here-------------------------------*/
 
 /*-------------------------#Rent start here-----------------------------*/
 	#Rent{
-			height: 851px;
 			margin: 0px;
 			padding: 0% 10.42% 0% 10.42%;
 			background-color: #f2fbfe;
 	}
 
 	.rent-left h2{
-			height: 53px;
 			font-family: "Noto Sans SC", sans-serif;
-			font-size: 38px;
+			font-size: 2.865vw;
 			font-weight: 600;
 			font-style: normal;
 			font-stretch: normal;
 			line-height: normal;
 			letter-spacing: 0.5px;
 			color: #12272e;
-			margin: 63px 0px 20px 0px;
+			margin: 10% 0 4% 0;
 	}
 
 	.rent-left p{
-			width: 465px;
-			height: 60px;
+			width: 90%;
 			font-family: "Noto Sans SC",sans-serif;
-			font-size: 22px;
+			font-size: 1.693vw;
 			font-weight: 500;
 			font-style: normal;
 			font-stretch: normal;
@@ -362,60 +357,20 @@
 
 	/* Slideshow container */
 	.slideshow-container {
-	  	max-width: 1000px;
-	  	position: relative;
+	  	max-width: 50%;
 	  	margin: auto;
 	}
 
-	.dot {
-	  	height: 15px;
-	  	width: 15px;
-	  	margin: 0 2px;
-	  	background-color: #bbb;
-	  	border-radius: 50%;
-	  	display: inline-block;
-	  	transition: background-color 1s ease;
+	.carousel-indicators{
+		position: relative;
 	}
 
-	.active {
-	  	background-color: #717171;
+	.carousel-indicators li{
+		background-color: black;
 	}
 
-	/* Fading animation */
-	.fade {
-	  	-webkit-animation-name: fade;
-	  	-webkit-animation-duration: 2s;
-	  	animation-name: fade;
-	  	animation-duration: 7s;
-	}
-
-	@-webkit-keyframes fade {
-	  	from {opacity: 0.1}
-	  	to {opacity: 1}
-	}
-
-	@keyframes fade {
-	  	from {opacity: 0.1}
-	  	to {opacity: 1}
-	}
-
-	#iphonechat{
-	  	position: absolute;
-			top: 172px;
-	  	left: 25%;
-	  	right: 25%;
-	}
-
-	.chatlogs{
-			width: 85%;
-			position: absolute;
-			top: 230px;
-	}
-
-	.chat{
-			display: flex;
-			flex-flow: row wrap;
-			align-items: flex-start;
+	.carousel-indicators .active{
+		background-color: gray;
 	}
 
 	.rent-right button{
@@ -426,16 +381,16 @@
 	}
 
 	.rentbtn{
-			width: 141px;
-  		height: 56px;
+			width: 75px;
+			height: 30px;
+  		height: auto;
   		border-radius: 4px;
   		background-color: #0fafff;
 	}
 
 	.rentbtn p{
-  		height: 22px;
+			font-size: 8.5px;
   		font-family: "Noto Sans SC",sans-serif;
-  		font-size: 16px;
   		font-weight: 600;
   		font-style: normal;
   		font-stretch: normal;
@@ -448,112 +403,94 @@
 
 /*-------------------------#OurStory start here-----------------------------*/
 	#OurStory {
-			height: 865px;
 			margin: 0px;
 			padding: 0% 10.42% 0% 10.42%;
 			background-color: #ffffff;
 	}
 
 	#TeamPic {
-	  	position: absolute;
-	  	left:43.8%;
+
 	}
 
 	#TeamPic img{
-			position: relative;
-			top:311px;
-	}
-
-	.container {
-			padding-left: 4.5%;
-			padding-right: 4.5%;
+		max-width: 55%;
+		height: auto;
+		margin: 40% 10% 20% 45%;
 	}
 
 	.story	{
 			position: absolute;
-			margin: 106px 0px 171px 0px;
-			width: 557px;
-  		height: 588px;
+			width: 40%;
+			height: auto;
   		border-radius: 18px;
   		box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.08);
   		background-color: #ffffff;
+			padding: 0 5% 0 5%;
+			margin: 10% 0 0 0;
 	}
 
 	.story h2 {
-			height: 53px;
 			font-family: "Noto Sans SC",sans-serif;
-			font-size: 38px;
+			font-size: 2.865vw;
 			font-weight: 600;
 			font-style: normal;
 			font-stretch: normal;
 			line-height: normal;
 			letter-spacing: 0.5px;
 			color: #12272e;
-			margin: 47px 0px 20px 0px;
+			margin: 7% 0 2.5% 0;
 	}
 
 	.story p {
-			width: 425px;
-  		height: 418px;
   		font-family: "Noto Sans SC", sans-serif;
-  		font-size: 22px;
+  		font-size: 1.693vw;
   		font-weight: 500;
   		font-style: normal;
   		font-stretch: normal;
   		line-height: 1.59;
   		letter-spacing: 0.3px;
   		color: #415258;
-			margin-top: 30px;
+			margin-bottom: 7%;
 	}
 /*-------------------------#OurStory end here-------------------------------*/
 /*-------------------------#OurTeam start here-----------------------------*/
 	#OurTeam {
-  		height: 1210px;
   		background-color: rgba(242, 251, 254, 1);
 			padding: 0% 10.42% 0% 10.42%;
 			margin: 0;
 	}
 
-	.teamTitle {
-			padding-top: 71px;
-	}
-
 	#OurTeam h1{
-	  	width: 193px;
-	  	height: 53px;
 	  	font-family: "Noto Sans SC", sans-serif;
-	  	font-size: 38px;
+	  	font-size: 2.865vw;
 	  	font-weight: 500;
 	  	font-style: normal;
 	  	font-stretch: normal;
 	  	line-height: normal;
 	  	letter-spacing: 0.5px;
 	  	color: #12272e;
-	  	margin-bottom: 30px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top:20%;
+			margin-bottom:20%;
+			text-align: center;
 	}
 
 	.members {
 			padding: 0px;
 	}
 
-	.member {
-		 	margin-bottom: 70px;
-	}
-
 	#OurTeam img{
-			height: 170px;
-			width: auto;
 	  	margin: auto;
 	  	display: block;
-			margin-bottom: 37px;
+			margin-bottom: 10%;
 	}
 
 	#OurTeam p._name{
-			height: 33px;
-	  	font-size: 24px;
+	  	font-size: 12.8px;
 	  	text-align: center;
 	  	font-family: "Noto Sans SC", sans-serif;
-	  	font-weight: 500;
+	  	font-weight: 700;
 	  	font-style: normal;
 	  	font-stretch: normal;
 	  	line-height: normal;
@@ -562,57 +499,53 @@
 	}
 
 	#OurTeam p._title{
-			height: 30px;
-	  	font-size: 22px;
+	  	font-size: 11.7px;
 	  	text-align: center;
 	  	font-weight: normal;
 	  	font-style: normal;
 	  	font-stretch: normal;
 	  	line-height: normal;
 	  	letter-spacing: 0.3px;
-	  	color: #262a3e;
+	  	color: #415258;
+			margin-bottom: 10%;
 	}
 /*-------------------------#OurTeam end here-------------------------------*/
 
 /*-------------------------#JoinUs start here-----------------------------*/
 	#JoinUs {
-			height: 670px;
 			margin: 0px;
 			padding: 0% 10.42% 0% 10.42%;
 			background-color: #ffffff;
 	}
 
 	.join-left h2{
-			height: 53px;
 			font-family: "Noto Sans SC",sans-serif;
-			font-size: 38px;
-			font-weight: 600;
+			font-size: 2.865vw;
+			font-weight: 700;
 			font-style: normal;
 			font-stretch: normal;
 			line-height: normal;
 			letter-spacing: 0.5px;
 			color: #12272e;
-			margin-top: 65px;
-			margin-bottom: 20px;
+			margin-top: 10%;
+			margin-bottom: 5%;
 	}
 
 	.join-left .subtitle{
-			height: 90px;
 			font-family: "Noto Sans SC", sans-serif;
-			font-size: 22px;
+			font-size: 1.693vw;
 			font-weight: 500;
 			font-style: normal;
 			font-stretch: normal;
 			line-height: normal;
 			letter-spacing: 0.3px;
 			color: #415258;
-			margin-bottom: 56px;
+			margin-bottom: 7.5%;
 	}
 
 	.join-left h3{
-  		height: 40px;
   		font-family: "Noto Sans SC", sans-serif;
-  		font-size: 28px;
+  		font-size: 2.083vw;
   		font-weight: 500;
   		font-style: normal;
   		font-stretch: normal;
@@ -623,8 +556,7 @@
 	}
 
 	.join-left .opening-positions{
-  		height: 120px;
-  		font-size: 22px;
+  		font-size: 1.693vw;
   		font-weight: normal;
   		font-style: normal;
   		font-stretch: normal;
@@ -635,37 +567,36 @@
 	}
 
 	.join-left button{
-			width: 141px;
-  		height: 56px;
+			width: 75px;
+  		height: 30px;
   		border-radius: 4px;
   		background-color: #0fafff;
   		font-family: "Noto Sans SC",sans-serif;
-  		font-size: 16px;
-  		font-weight: 600;
+  		font-size: 9.5px;
+  		font-weight: 400;
   		font-style: normal;
   		font-stretch: normal;
   		line-height: normal;
   		letter-spacing: 0.2px;
   		color: #ffffff;
+			margin-bottom: 15%;
 	}
 
 	.join-right{
-			margin-top: 137px;
+			margin-top: 13%;
 	}
 
 	.points{
-			margin-bottom: 67px;
+			margin-bottom: 10%;
 	}
 
 	.check_mark{
-			width: 64px;
-			height: 64px;
 			object-fit: contain;
 	}
 
 	.join-right p{
 			height: 60px;
-			font-size: 22px;
+			font-size: 1.693vw;
 			font-weight: normal;
 			font-style: normal;
 			font-stretch: normal;
@@ -680,14 +611,14 @@
 /*-------------------------Footer start here-----------------------------*/
 	footer {
   		background: #0fafff;;
-  		padding: 10px 0px;
+  		padding: 0% 10.42% 0% 10.42%;
   		height: auto;
 		}
 
 	.social{
   		font-family: "Noto Sans SC" sans-serif;
   		font-size: 16px;
-  		font-weight: 600;
+  		font-weight: 400;
   		font-style: normal;
   		font-stretch: normal;
   		line-height: normal;
@@ -700,11 +631,9 @@
 	}
 
 	footer p{
-  		width: 295px;
-  		height: 44px;
   		font-family: "Noto Sans SC" sans-serif;
   		font-size: 16px;
-  		font-weight: 600;
+  		font-weight: 400;
   		font-style: normal;
   		font-stretch: normal;
   		line-height: normal;
@@ -720,7 +649,7 @@
    Mobile styles
    ========================================================================== */
 	 /* Medium screens ----------- */
-	 @media screen and (min-width: 768px) and (max-width: 1399px) {
+	 /*@media screen and (min-width: 768px) and (max-width: 1399px) {
 		 		h1{
 						font-size:2.25em;
 				}
@@ -1042,7 +971,7 @@
 				.point{
 					padding: 0;
 				}
-	 }
+	 }*/
 
 /* Landscape phone to portrait tablet */
 @media screen and (max-width: 767px) {
