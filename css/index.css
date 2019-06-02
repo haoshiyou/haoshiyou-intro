@@ -133,7 +133,7 @@
 	.fixed-nav a{
 			font-family: "Noto Sans SC", sans-serif;
 	  	display: block;
-	  	font-size: 10px;
+	  	font-size: 1.302vw;
 	  	font-weight: normal;
 	  	font-style: normal;
 	  	font-stretch: normal;
@@ -152,8 +152,7 @@
 	}
 
 	.fixed_sigin{
-			position: relative;
-			top: 12.5px;
+			margin-top: 1.7%;
 			padding: 0;
 	}
 
@@ -208,7 +207,7 @@
 	}
 
 	.signin{
-			margin-top: 2%;
+			margin-top: 1.7%;
 			padding: 0;
 	}
 
@@ -653,335 +652,29 @@
    Mobile styles
    ========================================================================== */
 	 /* Medium screens ----------- */
-	 /*@media screen and (min-width: 768px) and (max-width: 1399px) {
-		 		h1{
-						font-size:2.25em;
-				}
-		 		.navbar .fixed-nav {
-    				position: relative;
-    				top: 8px;
-    				padding: 0;
-				}
-		 		.fixedNav_logo{
- 						padding: 0;
- 				}
+	 @media screen and (min-width: 1025px){
+		 	.fixed-nav a{
+	 	  	 font-size: 13px;
+	 		}
 
- 				.logo img {
- 						margin-top: 0;
-						width: 83%;
-						height: auto;
- 				}
+			.topNav_btn {
+					width:85px;
+					height:28px;
+			}
 
- 				.fixed-nav li{
- 						display: inline-block;
- 		  			padding: 0% 2.8% 0% 2.8%;
- 				}
+			.topNav_btn p{
+		  		font-size: 10px;
+			}
 
- 				.fixed-nav a{
-						font-size: 0.7em;
- 				}
+			.scroll-nav a{
+				font-size: 13px;
+			}
 
- 				.navbar .fixed-nav>li>a:hover{
- 	  				color: #ffffff;
- 	  				opacity: 0.6;
- 				}
-
- 				.navbar-right{
- 	  				width: auto;
- 				}
-
- 				.fixed_sigin{
- 						position: relative;
- 						top: 7.5px;
- 						padding: 0;
- 				}
-
-	 			header{
-	 		 			height: 370px;
-	 			}
-
-				.topNav{
-						height: 56.8px;
-				}
-
-				.topNav_logo{
-						position: relative;
-						top:20.8px;
-						padding-left: 0;
-						padding-right: 0;
-				}
-
-				.topNav_logo img{
-						width: 83%;
-						height: auto;
-				}
-
-				.scroll-nav{
-						position: relative;
-						top: 31px;
-						padding: 0;
-				}
-
-				.scroll-nav li{
-		  			margin: 0 2.8% 0 2.8%;
-				}
-
-
-				.scroll-nav a{
-		  			font-size: 10px;
-				}
-
-				.signin{
-						position: relative;
-						top: 26.7px;
-						padding: 0;
-				}
-
-				.topNav_btn {
-						width: 55%;
-						height: auto;
-						border-radius: 4px;
-						background-color: #ffffff;
-						padding: 5.3px 13px 5.3px 13px;
-				}
-
-				.topNav_btn p{
-						height: 12px;
-	  				font-family: "Noto Sans SC", sans-serif;
-	  				font-size: 8.5px;
-	  				font-weight: 600;
-	  				font-style: normal;
-	  				font-stretch: normal;
-	  				line-height: normal;
-	  				letter-spacing: 0.1px;
-	  				color: #0fafff;
-				}
-
-				.header-info {
-	  				position: absolute;
-	  				top:160px;
-	  				width: 100%;
-				}
-
-				#AboutUs{
-						height: 40vh;
-				}
-
-				.aboutUS-title{
-						padding: 32px 0px 49px 0px;
-				}
-
-				.aboutUS-title h1{
-						width: 45vw;
-				  	height: auto;
-				  	font-size: 2.083vw;
-				}
-
-				.aboutUs-img{
-						height:53%;
-						width: 53%;
-				}
-
-				.aboutUS-sutitle h3{
-						height: 30px;
-						font-size: 1.693vw;
-						margin: 1px 0px 12px 0px;
-				}
-
-				.aboutUS-sutitle p{
-						font-size: 1.302vw;
-						padding: 0% 8.5% 0% 8.5%;
-				}
-
-				#Rent{
-						height: 454px;
-				}
-
-				.rent-left h2{
-						font-size: 2.865vw;
-						height: 33px;
-						margin-top: 22.7px;
-						margin-bottom:9px;
-				}
-
-				.rent-left p{
-						width: 90%;
-						height: auto;
-						font-size: 1.693vw;
-				}
-
-				.dot {
-				  	height: 1.042vw;
-				  	width: 1.042vw;
-				}
-
-				#iphonechat{
-				  	position: absolute;
-						top: 75px;
-				  	left: 25%;
-				  	right: 25%;
-				}
-
-				.chatlogs{
-						position: absolute;
-						top: 130px;
-				}
-
-				.rentbtn{
-						width: 75.2px;
-			  		height: 30px;
-				}
-
-				.rentbtn p{
-			  		height: auto;
-			  		font-size: 1.107vw;
-				}
-
-				#OurStory {
-						height: 461.3px;
-				}
-
-				#TeamPic {
-						position: absolute;
-						left:43.8%;
-				}
-
-				#TeamPic img{
-						position: relative;
-						width: 45vw;
-						heigt:auto;
-						top:165.9px;
-				}
-
-				.story	{
-						position: absolute;
-						margin: 56.5px 0px 91.2px 0px;
-						width: 308px;
-						height: 313.6px;
-				}
-
-				.story h2 {
-						height: 33px;
-						font-size: 2.865vw;
-						margin: 17.3px 0px 5.6px 0px;
-				}
-
-				.story p {
-						width: 254px;
-						height: 241px;
-						font-size: 1.693vw;
-						margin-top: 5px;
-				}
-
-				#OurTeam {
-			  		height: 645.3px;
-				}
-
-				.teamTitle {
-						padding-top: 36px;
-				}
-
-				#OurTeam h1{
-				  	width: 130px;
-				  	height: 30px;
-				  	font-size: 2.865vw;
-				  	margin-bottom: 30px;
-				}
-
-				.member {
-					 	margin-bottom: 35px;
-				}
-
-				#OurTeam img{
-						height: auto;
-						width: 11.8vw;
-						margin-bottom: 17px;
-						margin-left:10px;
-						margin-right:10px;
-				}
-
-				#OurTeam p._name{
-						height: 18px;
-				  	font-size: 1.667vw;
-				}
-
-				#OurTeam p._title{
-						height: 16px;
-				  	font-size: 1.523vw;
-				}
-
-				#JoinUs {
-						height: 357.3px;
-				}
-
-				.join-left h2{
-						height: 33px;
-						font-size: 2.865vw;
-						margin-top: 33.2px;
-						margin-bottom: 9px;
-				}
-
-				.join-left .subtitle{
-						height: auto;
-						width:39.063vw;
-						font-size: 1.693vw;
-						margin-bottom: 23px;
-				}
-
-				.join-left h3{
-			  		height: 24px;
-			  		font-size: 2.083vw;
-						margin-bottom: 5.3px;
-				}
-
-				.join-left .opening-positions{
-			  		height: 76px;
-			  		font-size: 1.693vw;
-						margin-bottom: 16.7px;
-				}
-
-				.join-left button{
-						width: 75.2px;
-			  		height: 30px;
-			  		font-size: 1.107vw;
-				}
-
-				.join-right{
-						margin-top: 77.1px;
-				}
-
-				.points{
-						margin-bottom: 29.7px;
-				}
-
-				.check_mark{
-					padding: 0;
-					height: auto;
-					width: auto;
-				}
-
-				.check_mark img{
-						width: 4.5vw;
-						height: auto;
-						object-fit: contain;
-				}
-
-				.join-right p{
-						height: auto;
-						width: 29.818vw;
-						font-size: 1.693vw;
-				}
-
-				.point{
-					padding: 0;
-				}
-	 }*/
+	 }
 
 /* Landscape phone to portrait tablet */
-@media screen and (max-width: 767px) {
-	header{
+	@media screen and (max-width: 767px) {
+
+
 
 	}
-
-
-}
