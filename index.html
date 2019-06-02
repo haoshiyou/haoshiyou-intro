@@ -117,8 +117,8 @@
           <div class="col-sm-6 rent-left">
             <h2 style="color: black;">招租 & 求租</h2>
             <p>好室友平台为在湾区的华人提供快捷可靠的租房帮助</p>
-            <div id="slideshow-container" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner" role="listbox">
+            <div id="slideshow-container" class="carousel slide" data-ride="carousel" data-interval="3000">
+              <div class="carousel-inner">
                 <div class="item active">
                   <img src="img/C1.png" alt="First slide" style="width:100%">
                 </div>
@@ -131,9 +131,9 @@
               </div>
             </div>
             <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#slideshow-container" data-slide-to="0" class="active"></li>
+              <li data-target="#slideshow-container" data-slide-to="1"></li>
+              <li data-target="#slideshow-container" data-slide-to="2"></li>
             </ol>
             <!--div class="slideshow-container">
               <div class="mySlides fade">
@@ -315,16 +315,27 @@
     <script>
       var $carousel = $('#myCarousel');
       $carousel.carousel();
+      var handled=false;//global variable
 
       $carousel.bind('slide.bs.carousel', function (e) {
-          var current=$(e.target).find('.item.active');
-          $('.carousel-indicators li').removeClass('active')
+        var current=$(e.target).find('.item.active');
+        var indx=$(current).index();
+        if((indx+2)>$('.carousel-indicators li').length)
+          indx=-1
+          if(!handled){
+            $('.carousel-indicators li').removeClass('active')
+            $('.carousel-indicators li:nth-child('+(indx+2)+')').addClass('active');
+          }
+          else{
+            handled=!handled;//if handled=true make it back to false to work normally.
+          }
+      });
 
-          var indx=$(current).index();
-          console.log(indx);
-          if((indx+2)>$('.carousel-indicators li').length)
-            indx=-1
-          $('.carousel-indicators li:nth-child('+(indx+2)+')').addClass('active');
+      $(".carousel-indicators li").on('click',function(){
+        //Click event for indicators
+        $(this).addClass('active').siblings().removeClass('active');
+        //remove siblings active class and add it to current clicked item
+        handled=true; //set global variable to true to identify whether indicator changing was handled or not.
       });
     </script>
     </body>

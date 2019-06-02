@@ -366,10 +366,14 @@
 	}
 
 	.carousel-indicators li{
+		width: 1.042vw;
+		height: 1.042vw;
 		background-color: black;
 	}
 
 	.carousel-indicators .active{
+		width: 1.042vw;
+		height: 1.042vw;
 		background-color: gray;
 	}
 
