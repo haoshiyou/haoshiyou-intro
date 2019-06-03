@@ -29,15 +29,15 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="navbar-collapse collapse">
           <div class="row fixedNav">
-          <div class="col-sm-2 navbar-header fixedNav_logo">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <div class="col-xs-2 navbar-header fixedNav_logo">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#fixed-xs">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
             <a class="logo" href="index.html"><img class="img-responsive" src="img/Haoshiyou_Logo.svg" alt="Logo"></a>
           </div>
-          <div class="fixed-nav col-sm-9">
+          <div class="fixed-nav col-sm-9" id="fixed-xs">
             <ul>
               <li><a href="#AboutUs" class="scroll">关于好室友</a></li>
               <li><a href="#Rent" class="scroll">招租&求租</a></li>
@@ -46,7 +46,7 @@
               <li><a href="#JoinUs" class="scroll">加入我们</a></li>
             </ul>
           </div>
-          <div class="col-sm-1 text-right navbar-nav fixed_sigin">
+          <div class="col-sm-1 hidden-xs text-right navbar-nav fixed_sigin">
             <button type="button" class="btn btn-md topNav_btn"><p>立即加入</p></button>
           </div>
         </div><!--/.navbar-collapse -->
@@ -57,10 +57,10 @@
       <header>
       <div class="nav">
         <div class="row topNav">
-          <div class="col-sm-2 topNav_logo">
+          <div class="col-xs-2 topNav_logo">
             <a href="index.html"><img class="img-responsive" src="img/Haoshiyou_Logo.svg" alt="Logo"></a>
           </div>
-          <div class="scroll-nav col-sm-9">
+          <div class="scroll-nav col-sm-9 hidden-xs">
             <ul>
               <li><a href="#AboutUs" class="scroll">关于好室友</a></li>
               <li><a href="#Rent" class="scroll">招租&求租</a></li>
@@ -69,7 +69,7 @@
               <li><a href="#JoinUs" class="scroll">加入我们</a></li>
             </ul>
           </div>
-          <div class="col-sm-1 signin text-right navbar-nav">
+          <div class="col-sm-1 hidden-xs signin text-right navbar-nav">
             <button type="button" class="btn topNav_btn"><p>立即加入</p></button>
           </div>
         </div>
@@ -117,7 +117,7 @@
           <div class="col-sm-6 rent-left">
             <h2 style="color: black;">招租 & 求租</h2>
             <p>好室友平台为在湾区的华人提供快捷可靠的租房帮助</p>
-            <div id="slideshow-container" class="carousel slide" data-ride="carousel" data-interval="3000">
+            <div id="slideshow-container" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="item active">
                   <img src="img/C1.png" alt="First slide" style="width:100%">
@@ -153,7 +153,7 @@
             </div-->
         </div>
         <div class="col-sm-6 rent-right">
-            <button type="button" class="btn rentbtn"><p>立即入群</p></button>
+            <button type="button" class="btn rentbtn" style="margin-right:20px;"><p>立即入群</p></button>
             <button type="button" class="btn rentbtn"><p>下载IOS App</p></button>
         </div>
       </div>
@@ -252,7 +252,7 @@
                <li>Growth Hacker (1)</li>
                <li>Community Engagement Lead (2-3)</li>
             </ul>
-            <button type="button" class="btn btn-primary">立即加入</button>
+            <button type="button" class="btn rentbtn"><p>立即加入</p></button>
           </div>
           <div class="col-sm-6 join-right">
             <div class="row points">
@@ -286,16 +286,7 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-sm-4">
-            <p>Connect with us on:<br></p>
-            <ul class="list-inline social">
-              <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
-              <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
-              <li><a href="#"><i class="fa fa-instagram fa-lg"></i></a></li>
-            </ul>
-          </div>
-
-          <div class="col-sm-7 text-right">
+          <div class="col-sm-12 text-center">
             <p><small>Copyright &copy; 2014. All rights reserved. <br>
 	           </small></p>
           </div>
@@ -313,7 +304,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-      var $carousel = $('#myCarousel');
+      var $carousel = $('#slideshow-container');
       $carousel.carousel();
       var handled=false;//global variable
 
@@ -321,9 +312,9 @@
         var current=$(e.target).find('.item.active');
         var indx=$(current).index();
         if((indx+2)>$('.carousel-indicators li').length)
-          indx=-1
+          indx=-1;
           if(!handled){
-            $('.carousel-indicators li').removeClass('active')
+            $('.carousel-indicators li').removeClass('active');
             $('.carousel-indicators li:nth-child('+(indx+2)+')').addClass('active');
           }
           else{
