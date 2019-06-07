@@ -69,7 +69,7 @@
     	min-height: 40px;
     	padding-top: 2px;
     	position: fixed;
-    	top: -85px;
+    	top: -130px;
     	transition: top 0.4s ease 0s;
 	}
 
@@ -112,8 +112,9 @@
 			padding: 0;
 	}
 
-	.logo img {
-			margin-top: 0;
+	.logo-img{
+			max-width: 75%;
+			height: auto;
 	}
 
 	.navbar .fixed-nav{
@@ -178,6 +179,7 @@
 	}
 
 	.topNav_logo{
+			margin-top: 0.5%;
 			padding-left: 0;
 			padding-right: 0;
 	}
@@ -378,11 +380,17 @@
 		background-color: gray;
 	}
 
+	.rent-right img{
+			margin-top:30%;
+			margin-left: 10%;
+	}
+
 	.rent-right button{
 			position: relative;
 			left:25%;
 			right:25%;
-			margin-top:100%
+			margin-top: 5%
+			margin-bottom: 10%
 	}
 
 	.rentbtn{
