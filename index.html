@@ -27,17 +27,19 @@
 
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="navbar-collapse collapse">
           <div class="row fixedNav">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#fixedNav-xs">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+            <button type="button" class="navbar-toggle second-button" onclick="openNav()">
+              <div class="animated-icon2">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </button>
             <div class="col-xs-2 navbar-header fixedNav_logo">
               <a class="logo" href="index.html"><img class="logo-img" src="img/Logo3.png" alt="Logo"></a>
             </div>
-          <div class="fixed-nav col-sm-9" id="fixedNav-xs">
+          <div class="fixed-nav col-sm-9 hidden-xs" id="fixedNav-xs">
             <ul>
               <li><a href="#AboutUs" class="scroll">关于好室友</a></li>
               <li><a href="#Rent" class="scroll">招租&求租</a></li>
@@ -50,23 +52,24 @@
             <button type="button" class="btn btn-md topNav_btn"><p>立即加入</p></button>
           </div>
         </div><!--/.navbar-collapse -->
-      </div>
     </div>
 
     <div id="section1">
       <header>
       <div class="nav">
         <div class="row topNav">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNav-xs">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+          <button type="button" class="navbar-toggle second-button" onclick="openNav()">
+            <div class="animated-icon2">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </button>
           <div class="col-xs-2 topNav_logo">
             <a href="index.html"><img class="logo-img" src="img/Logo3.png" alt="Logo"></a>
           </div>
-          <div class="scroll-nav col-sm-9 navbar-collapse collapse" id="topNav-xs">
+          <div class="navbar-collapse collapse scroll-nav col-sm-9 hidden-xs" id="topNav-xs">
             <ul>
               <li><a href="#AboutUs" class="scroll">关于好室友</a></li>
               <li><a href="#Rent" class="scroll">招租&求租</a></li>
@@ -81,6 +84,15 @@
         </div>
       </div>
     </header>
+    <div id="mySidebar" class="sidebar">
+        <a href="#"></a>
+        <a href="#AboutUs" class="scroll">关于好室友</a>
+        <a href="#Rent" class="scroll">招租&求租</a>
+        <a href="#OurStory" class="scroll">我们的故事</a>
+        <a href="#OurTeam" class="scroll">我们的团队</a>
+        <a href="#JoinUs" class="scroll">加入我们</a>
+        <a href="#">立即加入</a>
+      </div>
       <div class="row header-info">
         <div class="col-md-8 col-md-offset-2 text-center">
           <h1 class="wow fadeIn slogan">为你在湾区找一个温馨的家</h1>
@@ -181,66 +193,66 @@
         </div>
       </div>
         <div class="row">
-          <div class="col-sm-3 member">
+          <div class="col-sm-3 col-xs-6 member">
             <img src="img/Reviewer1.png" class="img-responsive">
             <p class="_name">Zainan Zhou</p>
             <p class="_title">Project Lead</p>
           </div>
-          <div class="col-sm-3 member">
+          <div class="col-sm-3 col-xs-6 member">
             <img src="img/Reviewer1.png" class="img-responsive">
             <p class="_name">Peipei Wang</p>
             <p class="_title">UX Designer</p>
           </div>
-          <div class="col-sm-3 member">
+          <div class="col-sm-3 col-xs-6 member">
             <img src="img/Reviewer1.png" class="img-responsive">
             <p class="_name">Renjie Weng</p>
             <p class="_title">Back-end Engineer</p>
           </div>
-          <div class="col-sm-3 member">
+          <div class="col-sm-3 col-xs-6 member">
             <img src="img/Reviewer1.png" class="img-responsive">
             <p class="_name">Jiehua Zhu</p>
             <p class="_title">Mobile Engineer</p>
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-3 member">
+          <div class="col-sm-3 col-xs-6 member">
             <img src="img/Reviewer1.png" class="img-responsive">
             <p class="_name">William Chen</p>
             <p class="_title">Back-end Engineer</p>
           </div>
-          <div class="col-sm-3 member">
+          <div class="col-sm-3 col-xs-6 member">
             <img src="img/Reviewer1.png" class="img-responsive">
             <p class="_name">Sun Liu</p>
             <p class="_title">Back-end Engineer</p>
           </div>
-          <div class="col-sm-3 member">
+          <div class="col-sm-3 col-xs-6 member">
             <img src="img/Reviewer1.png" class="img-responsive">
             <p class="_name">Jiahui He</p>
             <p class="_title">UX Designer</p>
           </div>
-          <div class="col-sm-3 member">
+          <div class="col-sm-3 col-xs-6 member">
             <img src="img/Reviewer1.png" class="img-responsive">
             <p class="_name">Dawei Wang</p>
             <p class="_title">Data Scientist</p>
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-3 member">
+          <div class="col-sm-3 col-xs-6 member">
             <img src="img/Reviewer1.png" class="img-responsive">
             <p class="_name">Mengxue Lei</p>
             <p class="_title">Social Media</p>
           </div>
-          <div class="col-sm-3 member">
+          <div class="col-sm-3 col-xs-6 member">
             <img src="img/Reviewer1.png" class="img-responsive">
             <p class="_name">Jiajun Zhu</p>
             <p class="_title">Frontend Engineer</p>
           </div>
-          <div class="col-sm-3 member">
+          <div class="col-sm-3 col-xs-6 member">
             <img src="img/Reviewer1.png" class="img-responsive">
             <p class="_name">Your Name</p>
             <p class="_title">Talent</p>
           </div>
-          <div class="col-sm-3 member" class="img-responsive">
+          <div class="col-sm-3 col-xs-6 member" class="img-responsive">
             <img src="img/Reviewer1.png">
             <p class="_name">Your name</p>
             <p class="_title">Talent</p>
@@ -290,17 +302,6 @@
       </div>
     </div>
 
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 text-center">
-            <p><small>Copyright &copy; 2014. All rights reserved. <br>
-	           </small></p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
 
     <!-- Javascript
     ================================================== -->
@@ -310,6 +311,13 @@
     <script src="js/wow.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+    $(document).ready(function () {
+      $('.second-button').on('click', function () {
+          $('.animated-icon2').toggleClass('open');
+          });
+      });
+    </script>
     <script>
       var $carousel = $('#slideshow-container');
       $carousel.carousel();
@@ -336,5 +344,32 @@
         handled=true; //set global variable to true to identify whether indicator changing was handled or not.
       });
     </script>
+    <script>
+    /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+    function openNav() {
+      if(document.getElementById("mySidebar").style.width === "250px"){
+          document.getElementById("mySidebar").style.width = "0";
+      }
+      else{
+          document.getElementById("mySidebar").style.width = "250px";
+      }
+    }
+
+/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+function closeNav() {
+document.getElementById("mySidebar").style.width = "0";
+document.getElementById("main").style.marginLeft = "0";
+}
+    </script>
     </body>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <p><small>Copyright &copy; 2014. All rights reserved. <br>
+	           </small></p>
+          </div>
+        </div>
+      </div>
+    </footer>
 </html>
