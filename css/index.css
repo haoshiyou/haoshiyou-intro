@@ -318,7 +318,7 @@
 	#section1{
 			padding: 0% 10.42% 0% 10.42%;
 			min-height: 370px;
-			height:70vh;
+			height:50vh;
 			width: 100%;
 			background: url(../img/header-bg.jpg) no-repeat center center;
   		background-size: cover;
@@ -827,6 +827,10 @@
 				font-size: 1.270vw;
 			}
 
+			#section1{
+					height: 70vh;
+			}
+
 			.rentbtn{
 					width: 141px;
 					height: 70px;
@@ -867,6 +871,9 @@
 	@media screen and (max-width: 767px) {
 			.navbar-toggle:hover{
 					background-color: none;
+			}
+			.fixedNav_logo{
+					margin-top:4%;
 			}
 			.topNav_logo{
 					margin-top: 4%;
