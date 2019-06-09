@@ -340,66 +340,66 @@
 
 	/* The sidebar menu */
 .sidebar {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0;
-  left: 0;
-  background-color: #70cbce;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  	height: 100%; /* 100% Full-height */
+  	width: 0; /* 0 width - change this with JavaScript */
+  	position: fixed; /* Stay in place */
+  	z-index: 1; /* Stay on top */
+  	top: 0;
+  	left: 0;
+  	background-color: #70cbce;
+  	overflow-x: hidden; /* Disable horizontal scroll */
+  	padding-top: 60px; /* Place content 60px from the top */
+  	transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
 }
 
 /* The sidebar links */
 .sidebar a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  display: block;
-  transition: 0.3s;
+  	padding: 8px 8px 8px 32px;
+  	text-decoration: none;
+  	font-size: 25px;
+  	color: white;
+  	display: block;
+  	transition: 0.3s;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidebar a:hover {
-  color: #f1f1f1;
+  	color: #f1f1f1;
 }
 
 /* Position and style the close button (top right corner) */
 .sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+  	position: absolute;
+  	top: 0;
+  	right: 25px;
+  	font-size: 36px;
+  	margin-left: 50px;
 }
 
 /* The button used to open the sidebar */
 .openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #111;
-  color: white;
-  padding: 10px 15px;
-  border: none;
+  	font-size: 20px;
+  	cursor: pointer;
+  	background-color: #111;
+  	color: white;
+  	padding: 10px 15px;
+  	border: none;
 }
 
 .openbtn:hover {
-  background-color: none;
+  	background-color: none;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-  transition: margin-left .5s; /* If you want a transition effect */
-  padding: 20px;
+  	transition: margin-left .5s; /* If you want a transition effect */
+  	padding: 20px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
+  	.sidebar {padding-top: 15px;}
+  	.sidebar a {font-size: 18px;}
 }
 /*-------------------------header end here---------------------------------*/
 
@@ -544,6 +544,7 @@
   		height: auto;
   		border-radius: 4px;
   		background-color: #0fafff;
+			margin-bottom: 10%;
 	}
 
 	.rentbtn p{
@@ -645,7 +646,7 @@
 	}
 
 	#OurTeam p._name{
-	  	font-size: 12.8px;
+	  	font-size: 1.528vw;
 	  	text-align: center;
 	  	font-family: "Noto Sans SC", sans-serif;
 	  	font-weight: 700;
@@ -657,7 +658,7 @@
 	}
 
 	#OurTeam p._title{
-	  	font-size: 11.7px;
+	  	font-size: 1.250vw;
 	  	text-align: center;
 	  	font-weight: normal;
 	  	font-style: normal;
@@ -867,16 +868,78 @@
 			.navbar-toggle:hover{
 					background-color: none;
 			}
-			.scroll-nav{
-					float:right;
+			.topNav_logo{
+					margin-top: 4%;
 			}
-
-			.scroll-nav ul{
-				float: right;
+			.logo-img{
+					max-width:150%;
+					height:auto;
 			}
-			.scroll-nav li{
-					display: block;
+			#section1{
+					height: auto;
 			}
-
-
+			.aboutUS-title h1{
+					font-size:14px;
+					width: 100%;
+			}
+			.aboutUS-sutitle h3{
+					font-size:14px;
+			}
+			.aboutUS-sutitle p{
+					font-size:12px;
+			}
+			.rent-left h2{
+					font-size: 20px;
+			}
+			.rent-left p{
+					font-size:14px;
+			}
+			.carousel-indicators li{
+					width:7px;
+					height: 7px;
+			}
+			.carousel-indicators .active{
+					width:7px;
+					height: 7px;
+			}
+			.story{
+				position: relative;
+				width: 100%;
+				margin-left: auto;
+				margin-right: auto;
+				box-shadow:none;
+			}
+			.story h2{
+				font-size:20px;
+			}
+			.story p{
+				font-size:14px;
+			}
+			#TeamPic img{
+				max-width: 100%;
+				height:auto;
+				margin:5% 0 10% 0;
+			}
+			.join-left h2{
+				font-size: 20px;
+			}
+			.join-left .subtitle{
+				font-size: 12px;
+			}
+			.join-left 	h3{
+				font-size: 14px;
+			}
+			.join-left .opening-positions{
+				font-size:12px;
+			}
+			.join-right .check_mark{
+				padding-left: 0;
+			}
+			.join-right p{
+				font-size: 12px;
+				font-weight: 700;
+			}
+			footer p{
+				font-size: 10px;
+			}
 	}
