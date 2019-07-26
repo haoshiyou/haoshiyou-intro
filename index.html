@@ -26,6 +26,12 @@
 </head>
 
 <body>
+  <div id="subscriber_form" >
+     <div id="sub_div_form">
+        <span id="kv_form_close"><i class="fa fa-times"></i></span>
+         <img src="img/haoshiyou-QR.jpeg" class="img-responsive">
+     </div>
+  </div>
     <div class="navbar navbar-inverse navbar-fixed-top">
           <div class="row fixedNav">
             <button type="button" class="navbar-toggle second-button" onclick="openNav()">
@@ -49,7 +55,7 @@
             </ul>
           </div>
           <div class="col-sm-1 hidden-xs text-right navbar-nav fixed_sigin">
-            <button type="button" class="btn btn-md topNav_btn"><p>立即加入</p></button>
+            <button type="button" class="btn btn-md topNav_btn" id="qrBTN_fixed"><p>立即加入</p></button>
           </div>
         </div><!--/.navbar-collapse -->
     </div>
@@ -79,7 +85,7 @@
             </ul>
           </div>
           <div class="col-sm-1 hidden-xs signin text-right navbar-nav">
-            <button type="button" class="btn topNav_btn"><p>立即加入</p></button>
+            <button type="button" class="btn topNav_btn" id="qrBTN"><p>立即加入</p></button>
           </div>
         </div>
       </div>
@@ -91,15 +97,19 @@
         <a href="#OurStory" class="scroll">我们的故事</a>
         <a href="#OurTeam" class="scroll">我们的团队</a>
         <a href="#JoinUs" class="scroll">加入我们</a>
-        <a href="#">立即加入</a>
+        <a href="#" onclick="javascript: showQR()">立即加入</a>
       </div>
+      <script>
+        function showQR(){
+          $("#subscriber_form").show();
+        }
+      </script>
       <div class="row header-info">
         <div class="col-md-8 col-md-offset-2 text-center">
           <h1 class="wow fadeIn slogan">为你在湾区找一个温馨的家</h1>
         </div>
       </div>
     </div>
-
   <div id="AboutUs">
         <div class="row aboutUS-title">
           <div class="col-sm-10 col-sm-offset-1">
@@ -259,14 +269,6 @@
           <div class="col-sm-6 join-left" style="padding: 0;">
             <h2>加入我们</h2>
             <p class="subtitle">如果你也有一颗想为广大湾区华人和留学生朋友们找一个温暖的家的心，赶快加入我们，让更多的人通过好室友找到属于他们合适的家</p>
-            <h3>现开放招募的位置</h3>
-            <ul class="opening-positions">
-               <li>Full Stack Engineer (1-2)</li>
-               <li>UI/UX Designer (1)</li>
-               <li>Growth Hacker (1)</li>
-               <li>Community Engagement Lead (2-3)</li>
-            </ul>
-            <button type="button" class="btn rentbtn"><p>立即加入</p></button>
           </div>
           <div class="col-sm-6 join-right">
             <div class="row points">
@@ -294,9 +296,18 @@
               </div>
             </div>
           </div>
+          <div class="col-sm-6 join-left positions-list">
+            <h3>现开放招募的位置</h3>
+            <ul class="opening-positions">
+               <li>Full Stack Engineer (1-2)</li>
+               <li>UI/UX Designer (1)</li>
+               <li>Growth Hacker (1)</li>
+               <li>Community Engagement Lead (2-3)</li>
+            </ul>
+            <button type="button" class="btn rentbtn"><p>立即加入</p></button>
+          </div>
       </div>
     </div>
-
 
     <!-- Javascript
     ================================================== -->
@@ -351,10 +362,33 @@
     }
 
 /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
-function closeNav() {
-document.getElementById("mySidebar").style.width = "0";
-document.getElementById("main").style.marginLeft = "0";
-}
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+    </script>
+
+    <script>
+    $(document).ready(function(){
+      $('#subscriber_form').delay(1000).fadeIn('slow');  //default Auto after 1 Sec
+      $("#subscriber_form").on('click', function(e){  // Close, when click outside of the box
+        if (e.target !== this)
+          return;
+        else{
+          $(this).hide();
+        }
+      });
+
+      $("#qrBTN").on("click", function() {  // Custom Show button code.
+        $("#subscriber_form").show();
+      });
+      $("#qrBTN_fixed").on("click", function() {  // Custom Show button code.
+        $("#subscriber_form").show();
+      });
+      $("#kv_form_close").on('click', function(e){  // close button code.
+        $('#subscriber_form').fadeOut('slow');
+      });
+    });
     </script>
     </body>
     <footer>
